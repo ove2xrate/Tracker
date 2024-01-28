@@ -16,6 +16,8 @@
 		A911EEBF2B52924E00E3E314 /* TrackerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A911EEBE2B52924E00E3E314 /* TrackerUITestsLaunchTests.swift */; };
 		A911EED02B529AAC00E3E314 /* TrackersScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A911EECF2B529AAC00E3E314 /* TrackersScreenViewController.swift */; };
 		A911EED22B529ABC00E3E314 /* StaticticScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A911EED12B529ABC00E3E314 /* StaticticScreenViewController.swift */; };
+		A99CCA9B2B6699D2003BA0E3 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A99CCA9A2B6699D2003BA0E3 /* UIColorExtension.swift */; };
+		A99CCA9E2B66A1A3003BA0E3 /* DateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A99CCA9D2B66A1A3003BA0E3 /* DateFormatter.swift */; };
 		A9F719672B53D5BD00855F42 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9F719662B53D5BD00855F42 /* TabBarViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -50,6 +52,8 @@
 		A911EEBE2B52924E00E3E314 /* TrackerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackerUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		A911EECF2B529AAC00E3E314 /* TrackersScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackersScreenViewController.swift; sourceTree = "<group>"; };
 		A911EED12B529ABC00E3E314 /* StaticticScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StaticticScreenViewController.swift; sourceTree = "<group>"; };
+		A99CCA9A2B6699D2003BA0E3 /* UIColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
+		A99CCA9D2B66A1A3003BA0E3 /* DateFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFormatter.swift; sourceTree = "<group>"; };
 		A9F719662B53D5BD00855F42 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -103,6 +107,7 @@
 			children = (
 				A911EE9B2B52924D00E3E314 /* AppDelegate.swift */,
 				A911EE9D2B52924D00E3E314 /* SceneDelegate.swift */,
+				A99CCA9C2B66A185003BA0E3 /* Helpers */,
 				A911EEA42B52924E00E3E314 /* Assets.xcassets */,
 				A911EEA62B52924E00E3E314 /* LaunchScreen.storyboard */,
 				A911EEA92B52924E00E3E314 /* Info.plist */,
@@ -128,6 +133,15 @@
 				A911EEBE2B52924E00E3E314 /* TrackerUITestsLaunchTests.swift */,
 			);
 			path = TrackerUITests;
+			sourceTree = "<group>";
+		};
+		A99CCA9C2B66A185003BA0E3 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				A99CCA9A2B6699D2003BA0E3 /* UIColorExtension.swift */,
+				A99CCA9D2B66A1A3003BA0E3 /* DateFormatter.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -263,8 +277,10 @@
 				A911EED22B529ABC00E3E314 /* StaticticScreenViewController.swift in Sources */,
 				A911EED02B529AAC00E3E314 /* TrackersScreenViewController.swift in Sources */,
 				A9F719672B53D5BD00855F42 /* TabBarViewController.swift in Sources */,
+				A99CCA9E2B66A1A3003BA0E3 /* DateFormatter.swift in Sources */,
 				A911EE9C2B52924D00E3E314 /* AppDelegate.swift in Sources */,
 				A911EE9E2B52924D00E3E314 /* SceneDelegate.swift in Sources */,
+				A99CCA9B2B6699D2003BA0E3 /* UIColorExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
