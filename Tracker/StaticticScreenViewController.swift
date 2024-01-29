@@ -5,13 +5,29 @@ final class StaticticScreenViewController: UIViewController {
     
     private let noStatisticImage = UIImageView()
     private let noStatisticlabel = UILabel()
+    private let titleLabel = UILabel()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         setupImageView()
         setupLabel()
+        setupTitleLabel()
         
         self.view.backgroundColor = UIColor.white
+    }
+    
+    private func setupTitleLabel() {
+        titleLabel.text = "Статистика"
+        titleLabel.textColor = .black
+        titleLabel.font = .systemFont(ofSize: 34, weight: .bold)
+        
+        titleLabel.translatesAutoresizingMaskIntoConstraints = false
+        view.addSubview(titleLabel)
+        
+        NSLayoutConstraint.activate([
+            titleLabel.topAnchor.constraint(equalTo: view.topAnchor, constant: 88),
+            titleLabel.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor, constant: 16),
+        ])
     }
     
     private func setupImageView() {
@@ -24,7 +40,7 @@ final class StaticticScreenViewController: UIViewController {
         
         NSLayoutConstraint.activate([
             noStatisticImage.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor, constant: 148),
-            noStatisticImage.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 375),
+            noStatisticImage.topAnchor.constraint(equalTo: view.topAnchor, constant: 375),
             noStatisticImage.widthAnchor.constraint(equalToConstant: 80),
             noStatisticImage.heightAnchor.constraint(equalToConstant: 80)
         ])
